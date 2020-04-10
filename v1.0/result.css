@@ -1,0 +1,167 @@
+
+/* ul */
+#list {
+	padding-left: 0;
+	list-style-type: none;
+}
+
+/* li */
+.list {
+	box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+	margin-bottom: 20px;
+}
+.list > a {
+	padding: 2em;
+	display: block;
+	position: relative;
+	background: #fff;
+	border-left: 8px solid #8a4a8a;
+	transition: color 300ms 0s ease, background-color 300ms 0s ease, border-color 300ms 0s ease;
+}
+.list > a:hover,
+.list > a:focus {
+	background-color: #f5eef5;
+	border-color: #703b70;
+	color: #642d64;
+}
+.list > a > h3 {
+	font-size: 1.3em;
+	font-weight: 700;
+	margin-bottom: 0.5em;
+}
+.list > a > p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+.list > a > p:last-child {
+	margin-bottom: 0;
+}
+.list > a::before {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 2em;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all 300ms 0s ease;
+}
+.list > a:hover::before,
+.list > a:focus::before {
+	border-color: #703b70;
+	right: 1.5em;
+}
+
+.list .tag {
+	/* color: #999;
+	font-size: 0.8em; */
+	margin-top: 1.5em;
+}
+.list .tag > span {
+	display: inline-block;
+    color: #fff;
+    padding: 2px 6px;
+    margin-right: 5px;
+	border-radius: 20px;
+	background-color: #a782a7;
+	transition: all 300ms 0s ease;
+}
+.list > a:hover .tag > span {
+	background-color: #946894;
+}
+.list .tag > span:first-child {
+	margin-left: 10px;
+}
+
+#query .title {
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 1.1em;
+}
+#query > p {
+	font-size: 0.8em;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#keyword > span {
+	display: inline-block;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+#count {
+	font-size: 1.5em;
+    display: inline-block;
+}
+#count .small {
+	font-size: 0.5em;
+}
+#count .delimiter {
+	font-size: 0.7em;
+    margin: 0 5px;
+}
+
+/* Smartphone */
+@media screen and (max-width:767px) {
+
+	.list > a {
+		padding: 1.5em 2.5em 1.5em 1.5em;
+	}
+	.list > a::before {
+		right: 1.2em;
+	}
+	.list > a:hover::before,
+	.list > a:focus::before {
+		right: 1em;
+	}
+
+	.list .tag > span {
+		margin-right: 2px;
+		margin-bottom: 2px;
+	}
+
+}
+
+/* iPhone 6/7/8/X */
+@media screen and (max-width:400px) {
+
+}
+
+/* Galaxy S5, iPhone 5/SE */
+@media screen and (max-width:360px) {
+
+}
+
+/* iPad */
+@media screen and (min-width:768px) {
+
+	.list > a {
+		padding: 2em 4em 2em 2em;
+	}
+	
+}
+
+/* iPad Pro */
+@media screen and (min-width:1024px) {
+
+}
+
+/* pc */
+@media screen and (min-width:1180px) {
+    
+}
+
+/* IE10以降 */
+@media all and (-ms-high-contrast: none) {
+    
+}

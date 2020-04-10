@@ -1,0 +1,194 @@
+
+/* link */
+a, a:hover, a:focus {
+    display: inline-block;
+    text-decoration: none;
+    transition: color 300ms 0s ease, background-color 300ms 0s ease, border-color 300ms 0s ease;
+}
+a:hover, a:focus {
+    color: #0c6a6d;
+}
+#header a {
+    color: rgba(255, 255, 255, 0.8);
+}
+#header a:hover,
+#header a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: #008260;
+}
+/* IE10以降 */
+@media all and (-ms-high-contrast: none) {
+    #header a {
+        height: 58px;
+    }
+}
+
+/* button-default */
+a.uk-button-default {
+    background-color: #fff;
+    border-bottom: 4px solid #b2b2b2;
+}
+a.uk-button-default:hover,
+a.uk-button-default:focus {
+    background-color: #f9f9f9;
+}
+
+/* button-primary */
+a.uk-button-primary {
+    background-color: #00956E;
+    border-bottom: 4px solid #007052;
+}
+a.uk-button-primary:hover,
+a.uk-button-primary:focus {
+    background-color: #008260;
+}
+
+/* button-right-arrow */
+a.uk-button.right-arrow {
+    position: relative;
+}
+a.uk-button.right-arrow::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all 300ms 0s ease;
+}
+a.uk-button.uk-button-default.right-arrow::before {
+    border-color: #999;
+}
+a.uk-button.right-arrow:hover::before,
+a.uk-button.right-arrow:focus::before {
+    right: 15px;
+} 
+
+/* button-left-arrow */
+a.uk-button.left-arrow {
+    position: relative;
+}
+a.uk-button.left-arrow::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+    transition: all 300ms 0s ease;
+}
+a.uk-button.uk-button-default.left-arrow::before {
+    border-color: #999;
+}
+a.uk-button.left-arrow:hover::before,
+a.uk-button.left-arrow:focus::before {
+    left: 15px;
+}
+
+/* body */
+html, body {
+	width: 100%;
+	height: 100%;
+    overflow: hidden;
+}
+body, .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6 {
+    font-family: Lato, "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+/* header */
+#header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to left, #008260, #00956E);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.16);
+    z-index: 1;
+}
+#bland h1 {
+    display: inline-block;
+    font-size: 15px;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 600;
+    margin: 0;
+}
+#bland h1 a {
+    padding: 0 20px;
+}
+
+/* main */
+#main {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: calc(100% - 120px);
+    overflow-y: auto;
+    background-color: #eee;
+    padding: 40px 10px;
+}
+
+/* contents */
+#contents > div {
+    margin-bottom: 40px;
+}
+#contents h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #555;
+    padding: 0.8em 1em;
+    background: #fefefe;
+    border-left: solid 5px #008260;
+}
+
+/* Galaxy S5, iPhone 5/SE */
+@media screen and (max-width:360px) {
+
+    #bland h1 a {
+        padding: 0 10px;
+        font-size: 0.9em;
+    }
+
+    #main {
+        height: calc(100% - 80px);
+        padding: 20px 0px;
+    }
+
+}
+
+@media screen and (min-width: 760px) {
+
+    /* header */
+    #bland h1 {
+        height: 60px;
+        line-height: 60px;
+        font-size: 1.1em;
+    }
+
+    /* main */
+    #main {
+        height: calc(100% - 180px);
+        padding: 80px 0 40px;
+    }
+
+    /* contents */
+    #contents h2 {
+        font-size: 1.5em;
+    }
+
+}

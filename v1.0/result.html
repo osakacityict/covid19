@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+
+  <meta charset="utf-8">
+  <title>新型コロナウイルス感染症対策支援情報サイト | サンプル市</title>
+  <meta name="description" content="新型コロナウイルス感染症の影響を受けた事業者の方や市民の方を支援するための制度等をご案内します。">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="theme-color" content="#008260">
+
+  <link rel="stylesheet" type='text/css' href="https://fonts.googleapis.com/css?family=Lato%3A400%2C700%7CNoto+Sans+JP%3A400%2C700&#038;ver=5.3.2" media='all' />
+  <link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/common.css?version=0.1.6">
+  <link rel="stylesheet" type="text/css" href="css/jigyousha.css?version=0.0.1">
+  <link rel="stylesheet" type="text/css" href="result.css?version=0.1.10">
+  <link rel="stylesheet" type="text/css" media="print" href="css/print.css?version=0.0.1">
+
+  <meta property="og:title" content="新型コロナウイルス感染症対策支援情報サイト | サンプル市"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="新型コロナウイルス感染症の影響を受けた事業者の方や市民の方を支援するための制度等をご案内します。"/>
+  <meta property="og:url" content="https://covid19.city.sample.lg.jp/"/>
+  <meta property="og:image" content="https://covid19.city.sample.lg.jp/og_image.png"/>
+  <meta property="og:site_name" content="新型コロナウイルス感染症対策支援情報サイト | サンプル市"/>
+  <meta property="og:locale" content="ja_JP"/>
+
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+
+  <script type="text/javascript" src="result.js?version=0.1.11"></script>
+
+</head>
+<body onload="drawResult()">
+
+  <div id="header">
+    <div id="bland" class="uk-text-center">
+        <h1><a href="index.html">新型コロナウイルス感染症対策支援情報サイト</a></h1>
+    </div>
+  </div>
+
+  <div id="main">
+    <div id="contents" class="uk-container uk-container-small">
+
+        <div>
+            <a href="search.html" class="uk-button uk-button-default uk-button-large uk-margin-bottom left-arrow">キーワード検索画面へ戻る</a>
+            <div id="query">
+              <p class="uk-margin-remove-top uk-margin-remove-bottom"><span class="title">検索条件</span><span id="keyword"></span></p>
+              <p class="uk-margin-remove-top uk-margin-remove-bottom"><span class="title">検索結果</span><span id="count"></span></p>
+            </div>
+            <ul id="list"></ul>
+            <a href="search.html" class="uk-button uk-button-default uk-button-large uk-margin-top left-arrow">キーワード検索画面へ戻る</a>
+        </div>
+
+      </div>
+  </div>
+
+</body>
+</html>

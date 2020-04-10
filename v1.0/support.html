@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+
+  <meta charset="utf-8">
+  <title>新型コロナウイルス感染症対策支援情報サイト | サンプル市</title>
+  <meta name="description" content="新型コロナウイルス感染症の影響を受けた事業者の方や市民の方を支援するための制度等をご案内します。">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="theme-color" content="#008260">
+
+  <link rel="stylesheet" type='text/css' href="https://fonts.googleapis.com/css?family=Lato%3A400%2C700%7CNoto+Sans+JP%3A400%2C700&#038;ver=5.3.2" media='all' />
+  <link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/common.css?version=0.1.6">
+  <link rel="stylesheet" type="text/css" href="css/jigyousha.css?version=0.0.1">
+  <link rel="stylesheet" type="text/css" href="support.css?version=0.1.6">
+  <link rel="stylesheet" type="text/css" media="print" href="css/print.css?version=0.0.1">
+
+  <meta property="og:title" content="新型コロナウイルス感染症対策支援情報サイト | サンプル市"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="新型コロナウイルス感染症の影響を受けた事業者の方や市民の方を支援するための制度等をご案内します。"/>
+  <meta property="og:url" content="https://covid19.city.sample.lg.jp/"/>
+  <meta property="og:image" content="https://covid19.city.sample.lg.jp/og_image.png"/>
+  <meta property="og:site_name" content="新型コロナウイルス感染症対策支援情報サイト | サンプル市"/>
+  <meta property="og:locale" content="ja_JP"/>
+
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+
+  <script type="text/javascript" src="support.js?version=0.1.8"></script>
+
+</head>
+<body onload="drawEvent()">
+
+  <div id="header">
+    <div id="bland" class="uk-text-center">
+        <h1><a href="index.html">新型コロナウイルス感染症対策支援情報サイト</a></h1>
+    </div>
+  </div>
+
+  <div id="main">
+    <div id="contents" class="uk-container uk-container-small">
+
+        <a href="#" onclick="clickButton()" class="uk-button uk-button-default uk-button-large uk-margin-bottom left-arrow">一覧へ戻る</a>
+
+        <div class="uk-margin uk-margin-remove-bottom">
+
+          <h2><span id="keyword"></span></h2>
+
+          <div class="contents-block">
+            <h3>概要</h3>
+            <p><span id="description"></span></p>
+          </div>
+
+          <div class="contents-block">
+            <h3>詳細内容</h3>
+            <p><span id="content"></span></p>
+            <div id="url" class="uk-margin-bottom uk-text-center"></div>
+          </div>
+
+          <div class="contents-block">
+            <h3>お問い合わせ</h3>
+            <p><span id="contact"></span></p>
+          </div>
+
+        </div>
+
+        <p>最終更新日<span id="lastupdate" class="uk-margin-left"></span></p>
+
+        <div id="sns" class="uk-margin-large-top"></div>
+
+        <a href="#" onclick="clickButton()" class="uk-button uk-button-default uk-button-large uk-margin-top uk-margin-large-bottom left-arrow">一覧へ戻る</a>
+
+      </div>
+  </div>
+
+</body>
+</html>

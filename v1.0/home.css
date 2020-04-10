@@ -1,0 +1,134 @@
+
+#contents .keyword {
+	margin-top: 60px;
+}
+
+#contents .categories a {
+	padding-top: 10px;
+    padding-bottom: 15px;
+	line-height: 1.3;
+}
+
+#contents .category > h3 {
+	font-weight: 700;
+    font-size: 1.1em;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #444;
+}
+#contents .category > h3 > .search.icon {
+	height: 15px;
+    width: 15px;
+}
+#contents .category > h3 > .search.icon:before {
+	top: 15px;
+	height: 8px;
+}
+#contents .category > h3 > span {
+	margin-left: 30px;
+}
+
+#contents .category a > img {
+	max-width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+#contents .category a > span {
+    display: block;
+}
+
+#contents .info {
+    background: #f9f9f9;
+    font-size: 0.95em;
+	border-radius: 5px;
+}
+#contents .info p:last-child {
+	margin-bottom: 0;
+}
+
+/* Smartphone */
+@media screen and (max-width:767px) {
+    
+    #contents .categories a {
+		width: 100%;
+		padding: 10% 5%;
+	}
+	#contents .category a > img {
+		display: inline-block;
+    	width: 30%;
+	}
+	#contents .category a > span {
+		display: inline-block;
+		width: calc(70% - 5px);
+		text-align: left;
+		padding-left: 5px;
+		vertical-align: middle;
+		font-size: 1.2em;
+	}
+
+}
+
+/* iPhone 6/7/8/X */
+@media screen and (max-width:400px) {
+
+}
+
+/* Galaxy S5, iPhone 5/SE */
+@media screen and (max-width:360px) {
+	#contents .category a > span {
+		font-size: 1em;
+	}
+}
+
+/* iPad */
+@media screen and (min-width:768px) {
+
+	#contents .categories a {
+		position: relative;
+		height: 130px;
+		width: 100%;
+	}
+	#contents .category a > img {
+		position: absolute;
+		top: 10px;
+		left: 0;
+		right: 0;
+		transition: top 300ms 0s ease;
+	}
+	#contents .categories a:hover > img,
+	#contents .categories a:focus > img {
+		top: 12px;
+	}
+	#contents .category a > span {
+		position: absolute;
+		width: 70%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 2.5em;
+		margin: 0 auto;
+	}
+}
+
+/* iPad Pro */
+@media screen and (min-width:1024px) {
+
+}
+
+/* pc */
+@media screen and (min-width:1180px) {
+
+    #contents .category a > span {
+		font-size: 1.15em;
+	}
+
+	#contents .keyword a {
+		font-size: 1em;
+	}
+
+}
+
+/* IE10以降 */
+@media all and (-ms-high-contrast: none) {
+    
+}

@@ -1,0 +1,115 @@
+
+
+#contents p {
+    color: #1f2833;
+}
+
+#contents h3 {
+    font-weight: 700;
+    font-size: 1.4em;
+    border-bottom: 6px solid #aaa;
+    display: inline-block;
+    padding: 5px 5px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.contents-block {
+    padding: 10px 40px;
+    margin-bottom: 2px;
+    background-color: #fff;
+}
+
+#url {
+    background-color: #f9f9f9;
+}
+#url > a {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1.2em;
+    font-weight: 700;
+    width: 60%;
+    border-radius: 5px;
+    border-bottom-width: 8px;
+}
+#url > a.right-arrow::before {
+    right: 1.5em;
+    width: 0.5em;
+    height: 0.5em;
+}
+#url > a.right-arrow:hover::before,
+#url > a.right-arrow:focus::before {
+    right: 1.2em;
+}
+
+#sns > a {
+    padding: 0 40px;
+    border-radius: 2px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+    position: relative;
+    top: 0px;
+    transition: top 300ms 0s ease;
+}
+#sns > a:hover, 
+#sns > a:focus {
+    top: -4px;
+}
+#sns > a.twitter {
+    background-color: #1DA1F2;
+}
+#sns > a.line {
+    background-color: #00b900;
+}
+#sns > a.facebook {
+    background-color: #3B5998;
+}
+
+/* Smartphone */
+@media screen and (max-width:767px) {
+    
+    .contents-block {
+        padding: 0 20px 1px;
+    }
+
+    #url > a {
+        width: 80%;
+    }
+
+    #sns > a {
+        padding: 10px 0;
+        text-align: center;
+        width: calc(50% - 4px);
+    }
+
+}
+
+/* iPhone 6/7/8/X */
+@media screen and (max-width:400px) {
+
+}
+
+/* Galaxy S5, iPhone 5/SE */
+@media screen and (max-width:360px) {
+
+}
+
+/* iPad */
+@media screen and (min-width:768px) {
+
+}
+
+/* iPad Pro */
+@media screen and (min-width:1024px) {
+
+}
+
+/* pc */
+@media screen and (min-width:1180px) {
+    
+}
+
+/* IE10以降 */
+@media all and (-ms-high-contrast: none) {
+    
+}

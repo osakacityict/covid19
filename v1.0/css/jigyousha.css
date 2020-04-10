@@ -1,0 +1,11 @@
+
+a.uk-button-primary {
+    background-color: #945694;
+    border-bottom: 4px solid #703b70;
+}
+a.uk-button-primary:hover, a.uk-button-primary:focus {
+	background-color: #8a4a8a;
+}
+#contents h2 {
+	border-color: #8a4a8a;
+}

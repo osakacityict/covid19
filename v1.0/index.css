@@ -1,0 +1,103 @@
+
+#contents p {
+    color: #1f2833;
+}
+
+.buttons a.uk-button {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    font-size: 2.5em;
+    font-weight: 600;
+    border-bottom: 8px solid #007052;
+    background-position: left 15% center;
+	background-repeat: no-repeat;
+	background-size: 80px auto;
+}
+.buttons a.uk-button.right-arrow::before {
+    right: 1em;
+    width: 0.5em;
+    height: 0.5em;
+}
+.buttons a.uk-button.right-arrow:hover::before,
+.buttons a.uk-button.right-arrow:focus::before {
+    right: 0.8em;
+}
+
+.buttons a.uk-button > span {
+    margin-left: 40px;
+}
+
+.buttons a.uk-button.kojin {
+    background-color: #cf426c;
+    border-bottom-color: #a52f53;
+    background-image: url("png/kojin/top.png");
+}
+.buttons a.uk-button.kojin:hover,
+.buttons a.uk-button.kojin:focus {
+    background-color: #c93662;
+}
+
+.buttons a.uk-button.jigyousha {
+    background-color: #945694;
+    border-bottom-color: #703b70;
+    background-image: url("png/jigyousha/top.png");
+}
+.buttons a.uk-button.jigyousha:hover,
+.buttons a.uk-button.jigyousha:focus {
+    background-color: #8a4a8a;
+}
+
+/* Smartphone */
+@media screen and (max-width:767px) {
+    
+    .buttons a.uk-button {
+        background-size: 50px auto;
+        font-size: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .buttons a.uk-button::before {
+        right: 1em;
+    }
+    
+}
+
+/* iPhone 6/7/8/X */
+@media screen and (max-width:400px) {
+
+}
+
+/* Galaxy S5, iPhone 5/SE */
+@media screen and (max-width:360px) {
+
+}
+
+/* iPad */
+@media screen and (min-width:768px) {
+
+}
+
+/* iPad Pro */
+@media screen and (min-width:1024px) {
+
+}
+
+/* pc */
+@media screen and (min-width:1180px) {
+    .buttons a {
+        width: 80%;
+    }
+    .buttons a.uk-button.kojin {
+        margin-left: 60px;
+    }
+    .buttons a.uk-button.jigyousha {
+        margin-right: 60px;
+    }
+
+}
+
+/* IE10以降 */
+@media all and (-ms-high-contrast: none) {
+    
+}
