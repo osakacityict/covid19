@@ -1,7 +1,7 @@
 //グローバル
-var supportData = new Array(); //イベントデータ全て格納
+var supportData = new Array(); //csvから読み込んだ支援精度データを全て格納用
 
-//イベントデータクラス
+//サポートデータクラス
 function SupportData(_id, _name, _summary, _content, _contact, _url, _target, _lastupdate, _one, _two, _three, _four, _five, _six, _seven, _eight, _nine, _ten){
   this.id = _id;
   this.name = _name;
@@ -62,12 +62,12 @@ function drawResult(){
   //csvファイル読み込み
   var xhr = new XMLHttpRequest();
   xhr.onload = function(){
-    var tempArray = xhr.responseText.split("\n"); //正規表現の改行を用いる。内容説明に基データの文章中改行が用いられるため。
+    var tempArray = xhr.responseText.split("\n");
     var csvArray = new Array();
     for(var i=1;i<(tempArray.length-1);i++){ //i=1はヘッダーを読み込ませないため。length-1は読み込みオーバー防止
-      csvArray[i] = tempArray[i].split(","); //タブの正規表現
+      csvArray[i] = tempArray[i].split(",");
       var data = csvArray[i];
-      //とりあえず読み込んだすべてのデータをDataクラスの配列に格納
+      //とりあえず読み込んだすべてのデータをSupportDataクラスの配列に格納
       supportData[i] = new SupportData(data[0],data[1],data[2],data[3],data[4],data[5],data[6],data[7],data[8],data[9],data[10],data[11],data[12],data[13],data[14],data[15],data[16],data[17]);
       //判定
           if (word == ""){
@@ -87,7 +87,7 @@ function drawResult(){
             link.innerHTML =
               "<h3>" + data[1] + "</h3>" +
               "<p>"  + data[2] + "</p>" +
-              "<p class='uk-text-meta tag'>分類 "  + tag + "</p>" + 
+              "<p class='uk-text-meta tag'>分類 "  + tag + "</p>" +
               "<p class='uk-text-meta'>更新 <span class='uk-margin-small-left'>" + supportData[i].lastupdate + "</span></p>";
             tag = ""; //クリア
             item.appendChild(link);
@@ -110,7 +110,7 @@ function drawResult(){
             link.innerHTML =
               "<h3>" + data[1] + "</h3>" +
               "<p>"  + data[2] + "</p>" +
-              "<p class='uk-text-meta tag'>分類 "  + tag + "</p>" + 
+              "<p class='uk-text-meta tag'>分類 "  + tag + "</p>" +
               "<p class='uk-text-meta'>更新 <span class='uk-margin-small-left'>" + supportData[i].lastupdate + "</span></p>";
             tag = ""; //クリア
             item.appendChild(link);
@@ -127,6 +127,6 @@ function drawResult(){
 
 function clickList(num){
   var _id = num //リスト何番目がクリックされたか
-  var param = "id="+_id;
-  location.href = "./support.html?"+param;
+  var param = "id=" + _id;
+  location.href = "./support.html?" + param;
 }

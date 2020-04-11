@@ -1,8 +1,8 @@
 //グローバル
-var supportData = new Array(); //イベントデータ全て格納
+var supportData = new Array(); //csvから読み込んだ支援精度データを全て格納用
 var id; //id
 
-//イベントデータクラス
+//サポートデータクラス
 function SupportData(_id, _name, _summary, _content, _contact, _url, _target, _lastupdate, _one, _two, _three, _four, _five, _six, _seven, _eight, _nine, _ten){
   this.id = _id;
   this.name = _name;
@@ -49,7 +49,7 @@ function drawEvent(){
     for(var i=1;i<tempArray.length;i++){ //i=1はヘッダーを読み込ませないため
       csvArray[i] = tempArray[i].split(",");
       var data = csvArray[i];
-      //とりあえず読み込んだすべてのデータをDataクラスの配列に格納
+      //とりあえず読み込んだすべてのデータをSupportDataクラスの配列に格納
       supportData[i] = new SupportData(data[0],data[1],data[2],data[3],data[4],data[5],data[6],data[7],data[8],data[9],data[10],data[11],data[12],data[13],data[14],data[15],data[16],data[17]);
       //該当idのデータを表示
       if (i == id){
@@ -96,13 +96,13 @@ function clickButton(){
   } else {
     location.href = "home.html";
   }
-  
+
 }
 
 function getSnsSource() {
-  var s = 
+  var s =
     '<!--Twitter-->' +
-    '<a href="#" onclick="postTwitter()" class="twitter">' + 
+    '<a href="#" onclick="postTwitter()" class="twitter">' +
       '<img src="png/twitter.png?version=0.0.1" width="40" height="40" alt="Twitterで送る" />' +
     '</a>' +
     '<!--LINE-->' +
