@@ -1,5 +1,5 @@
 //グローバル
-var supportData = new Array(); //csvから読み込んだ支援精度データを全て格納用
+var supportData = new Array(); //csvから読み込んだ支援制度データを全て格納用
 var id; //id
 
 //サポートデータクラス

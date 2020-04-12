@@ -1,5 +1,5 @@
 //グローバル
-var supportData = new Array(); //csvから読み込んだ支援精度データを全て格納用
+var supportData = new Array(); //csvから読み込んだ支援制度データを全て格納用
 
 //サポートデータクラス
 function SupportData(_id, _name, _summary, _content, _contact, _url, _target, _lastupdate, _one, _two, _three, _four, _five, _six, _seven, _eight, _nine, _ten){
