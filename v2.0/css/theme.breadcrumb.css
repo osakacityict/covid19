@@ -1,0 +1,90 @@
+
+/* breadcrumb */
+.uk-breadcrumb > * > * {
+    color: #666;
+}
+.uk-breadcrumb > * > :focus,
+.uk-breadcrumb > * > :hover {
+    color: #333;
+}
+.uk-breadcrumb>:last-child > * {
+    color: #333;
+}
+.tm-breadcrumb {
+    background-color: #f1f5f5;
+}
+#header .tm-breadcrumb {
+    background-color: transparent;
+}
+.tm-breadcrumb > ul {
+    display: block;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 0;
+}
+#header .tm-breadcrumb > ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.tm-breadcrumb > ul > li {
+    display: inline-block;
+}
+.tm-breadcrumb > ul > li span {
+    vertical-align: middle;
+}
+.uk-breadcrumb > :nth-child(n+2):not(.uk-first-column)::before {
+    content: "";
+    margin: 0 0 0 10px;
+}
+
+/* large tablet */
+@media screen and (max-width:1199px) {
+    
+    /* breadcrumb */
+    #header .tm-breadcrumb > ul {
+        padding-top: 10px;
+    }
+
+}
+
+/* tablet */
+@media screen and (max-width:959px) {
+
+}
+
+/* large phone */
+@media screen and (max-width:639px) {
+    
+    /* breadcrumb */
+    .tm-breadcrumb {
+        padding: 30px 0;
+    }
+    .tm-breadcrumb > ul {
+        padding: 10px 10px 10px 0;
+    }
+    .tm-breadcrumb > ul > li:first-child {
+        margin-left: 30px;
+    }
+    .tm-breadcrumb > ul > li:last-child {
+        margin-right: 30px;
+    }
+    #header .tm-breadcrumb {
+        padding: 0;
+    }
+    #header .tm-breadcrumb > ul {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+
+}
+
+/* phone */
+@media screen and (max-width:400px) {
+    
+}
+
+/* small phone */
+@media screen and (max-width:360px) {
+    
+}

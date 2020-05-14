@@ -1,0 +1,281 @@
+
+/* hero */
+#hero > div {
+    height: calc(100vh - 150px);
+}
+#hero h1 {
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 2;
+}
+#hero p {
+    line-height: 2;
+}
+
+/* hero-buttons */
+.tm-hero-buttons {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.tm-hero-buttons a.uk-button-primary {
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.1em 1em 0.1em 4.5em;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    background-position: left 3.5em center;
+    background-repeat: no-repeat;
+    background-size: 1.5em auto;
+    border-width: 2px;
+    border-radius: 2em;
+    transition: background-color 300ms 0s ease, border-color 300ms 0s ease;
+}
+.tm-hero-buttons a.uk-button-primary.kojin {
+    color: #a52f53;
+    background-image: url("../img/kojin/top.svg");
+}
+.tm-hero-buttons a.uk-button-primary.jigyousha {
+    color: #703b70;
+    background-image: url("../img/jigyousha/top.svg");
+}
+.tm-hero-buttons a.uk-button-primary.kojin:hover,
+.tm-hero-buttons a.uk-button-primary.kojin:focus,
+.tm-hero-buttons .uk-active a.uk-button-primary.kojin {
+    color: #fff;
+    background-image: url("../img/kojin/top2.svg");
+}
+.tm-hero-buttons a.uk-button-primary.jigyousha:hover,
+.tm-hero-buttons a.uk-button-primary.jigyousha:focus,
+.tm-hero-buttons .uk-active a.uk-button-primary.jigyousha {
+    color: #fff;
+    background-image: url("../img/jigyousha/top2.svg");
+}
+.tm-hero-buttons a.uk-button-primary.left-arrow.kojin::before {
+    border-color: #a52f53;
+}
+.tm-hero-buttons a.uk-button-primary.left-arrow.jigyousha::before {
+    border-color: #703b70;
+}
+.tm-hero-buttons a.uk-button-primary.left-arrow.kojin:hover::before,
+.tm-hero-buttons a.uk-button-primary.left-arrow.kojin:focus::before,
+.tm-hero-buttons a.uk-button-primary.left-arrow.jigyousha:hover::before,
+.tm-hero-buttons a.uk-button-primary.left-arrow.jigyousha:focus::before {
+    border-color: #fff;
+}
+
+/* hero-tab-menu */
+.tm-tab-menu {
+    padding-top: 0;
+    position: relative;
+    top: -135px;
+    margin-bottom: -135px;
+}
+
+/* hero-tab-menu-tab */
+#hero-tab {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+#hero-tab.tm-hero-buttons {
+    margin-top: 0;
+}
+#hero-tab.uk-tab::before {
+    left: 0;
+    border-bottom: none;
+}
+#hero-tab > li {
+    padding-left: 0;
+}
+#hero-tab.tm-hero-buttons a.uk-button-primary {
+    border-radius: 0;
+    border: none;
+    background-position: left calc(46.5% - 1.5em) center;
+    text-align: left;
+    padding: 1.2em 1em 1.2em 46.5%;
+    box-shadow: 0 -15px 15px rgba(0,0,0,.08) inset;
+}
+#hero-tab.tm-hero-buttons a.uk-button-primary:hover,
+#hero-tab.tm-hero-buttons a.uk-button-primary:focus,
+#hero-tab.tm-hero-buttons .uk-active a.uk-button-primary {
+    box-shadow: none;
+}
+#hero-tab.tm-hero-buttons .uk-active a.uk-button-primary::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -15px;
+    border-top: 15px solid #ddd;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    z-index: 1;
+}
+#hero-tab.tm-hero-buttons .uk-active a.uk-button-primary.kojin::before{
+    border-top-color: #c93662;
+}
+#hero-tab.tm-hero-buttons .uk-active a.uk-button-primary.jigyousha::before{
+    border-top-color: #8a4a8a;
+}
+#hero-tab.tm-hero-buttons a.uk-button-primary span.small {
+    font-size: 0.7em;
+    font-weight: 400;
+    margin-left: 2px;
+}
+
+/* hero-tab-menu-menu */
+#hero-menu {
+    background-color: #fff; 
+}
+#hero-menu h3 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* hero-tab-menu-category */
+#hero-menu .uk-alert-danger {
+    border: 4px solid rgba(201, 54, 98, 0.9);
+    margin: 20px 0 60px;
+}
+#hero-menu .tm-category::before {
+    right: 1.5em;
+}
+#hero-menu .tm-category:hover::before,
+#hero-menu .tm-category:focus::before {
+    right: 1.2em;
+}
+#hero-menu .tm-category .uk-card-header {
+    padding-right: 40px;
+}
+#hero-menu .tm-category .uk-card-header .uk-h4 {
+    font-size: 1.3rem;
+}
+#hero-menu .tm-category .uk-card-header img {
+    width: 60px;
+}
+
+/* large tablet */
+@media screen and (max-width:1199px) {
+    
+    /* hero */
+    #hero {
+        height: 380px;
+    }
+
+    /* hero-menu-category */
+    #hero-menu .tm-category::before {
+        right: 1.2em;
+    }
+    #hero-menu .tm-category:hover::before,
+    #hero-menu .tm-category:focus::before {
+        right: 1em;
+    }
+    #hero-menu .tm-category .uk-card-header,
+    #hero-menu .tm-category::before {
+        border: none;
+    }
+    #hero-menu .tm-category .uk-card-header {
+        padding-right: 20px;
+    }
+    #hero-menu .tm-category .uk-card-header > .uk-grid {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #hero-menu .tm-category .uk-card-header .uk-h4 {
+        font-size: 1.1rem;
+    }
+    #hero-menu .tm-category .uk-card-header img {
+        width: 80px;
+    }
+
+}
+
+/* tablet */
+@media screen and (max-width:959px) {
+
+    /* hero-menu-category */
+    #hero-menu .tm-category .uk-card-header .uk-h4 {
+        font-size: 1rem;
+    }
+
+}
+
+/* large phone */
+@media screen and (max-width:639px) {
+    
+    /* hero */
+    #hero {
+        height: 300px;
+    }
+    #hero .uk-grid > div:nth-child(1) > div {
+        padding: 0;
+    }
+    #hero h1 {
+        font-size: 2.8em;
+    }
+
+    /* hero-tab */
+    .tm-tab-menu {
+        margin-top: -20px;
+        margin-bottom: 0;
+        padding: 0;
+        top: 0;
+    }
+    #hero-tab.tm-hero-buttons a.uk-button-primary {
+        text-align: center;
+        padding: 1.2em 1em 1.2em 40%;
+        line-height: 1.5;
+    }
+    #hero-tab.tm-hero-buttons a.uk-button-primary span.small {
+        display: block;
+        margin-left: 0;
+    }
+
+    /* hero-menu */
+    #hero-menu {
+        padding-bottom: 4em;
+    }
+
+    /* hero-menu-category */
+    #hero-menu .tm-category .uk-card-header > .uk-grid > div {
+        padding: 0;
+    }
+}
+
+/* phone */
+@media screen and (max-width:400px) {
+    
+    /* hero */
+    #hero h1 {
+        font-size: 2.7em;
+    }
+
+}
+
+/* small phone */
+@media screen and (max-width:360px) {
+    
+    /* hero */
+    #hero {
+        height: 250px;
+        margin-top: 0;
+    }
+    #hero h1 {
+        font-size: 2.3em;
+    }
+    #hero p {
+        line-height: 1.5;
+        font-size: 0.95em;
+    }
+
+    /* hero-buttons */
+    .tm-hero-buttons {
+        margin-top: 40px;
+    }
+
+}

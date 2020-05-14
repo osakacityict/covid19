@@ -1,0 +1,87 @@
+
+/* footer */
+#footer {
+    background-color: rgb(74, 148, 128);
+    position: relative;
+}
+#footer .logo a {
+    background-color: rgb(84, 161, 141);
+}
+#footer .logo a:hover,
+#footer .logo a:focus {
+    background-color: rgb(74, 155, 133);
+}
+#footer .logo img {
+    max-width: 40%;
+    margin: auto;
+}
+#footer a {
+    color: rgba(255, 255, 255, 0.8);
+}
+#footer a:hover,
+#footer a:focus {
+    color: rgba(255, 255, 255, 1);
+}
+#footer .sitemap a {
+    display: block;
+}
+#footer .sitemap li a.left-arrow {
+    position: relative;
+    padding-left: 1.5em;
+}
+#footer .sitemap li a.left-arrow::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    width: 0.5em;
+    height: 0.5em;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-right: 1px solid rgba(255, 255, 255, 0.8);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all 300ms 0s ease;
+}
+#footer .sitemap li a.left-arrow:hover::before,
+#footer .sitemap li a.left-arrow:focus::before {
+    left: 0.2em;
+    border-color: rgba(255, 255, 255, 1);
+}
+
+/* credit */
+#credit {
+    background-color: #3b4550;
+}
+
+/* large tablet */
+@media screen and (max-width:1199px) {
+    
+}
+
+/* tablet */
+@media screen and (max-width:959px) {
+
+}
+
+/* large phone */
+@media screen and (max-width:639px) {
+    
+    /* footer */
+    #footer .logo {
+        min-height: 100px;
+    }
+    
+}
+
+/* phone */
+@media screen and (max-width:400px) {
+    
+}
+
+/* small phone */
+@media screen and (max-width:360px) {
+
+}

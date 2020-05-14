@@ -1,0 +1,144 @@
+
+/* header */
+#header {
+    background: linear-gradient(to bottom, #fff, rgb(222, 231, 230));
+}
+
+/* nav */
+#nav {
+    transition: box-shadow 300ms 0s ease, background-color 300ms 0s ease;
+    z-index: 1100;
+}
+#nav.uk-sticky-below {
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.16);
+}
+#nav-search > a {
+    color: #666;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px 20px;
+    transition: all 300ms 0s ease;
+}
+#nav.uk-sticky-below #nav-search > a {
+    font-size: 0.7em;
+}
+#nav-search > a svg {
+    width: 40px;
+    height: 40px;
+    transition: all 300ms 0s ease;
+}
+#nav.uk-sticky-below #nav-search > a svg {
+    width: 30px;
+    height: 30px;
+}
+
+/* offcanvas */
+#offcanvas {
+    z-index: 1200;
+}
+#offcanvas .uk-offcanvas-bar {
+    padding: 60px 30px 30px;
+    background-color: #fff;
+}
+#offcanvas .uk-offcanvas-bar .uk-close {
+    color: #666;
+}
+#offcanvas .uk-offcanvas-bar .uk-form-label {
+    color: #1a1a1a;
+}
+#offcanvas .uk-offcanvas-bar .uk-select,
+#offcanvas .uk-offcanvas-bar .uk-input {
+    color: #1a1a1a;
+    border-color: #ddd;
+}
+#offcanvas .uk-offcanvas-bar .uk-button-primary {
+    background-color: #00956E;
+    color: #fff;
+}
+#offcanvas .uk-offcanvas-bar .uk-button-primary:hover,
+#offcanvas .uk-offcanvas-bar .uk-button-primary:focus {
+    background-color: #008260;
+}
+
+/* logo */
+.tm-logo {
+    font-weight: 700;
+    font-size: 1em;
+    transition: font-size 300ms 0s ease;
+    padding: 0 20px;
+}
+#nav.uk-sticky-below .tm-logo {
+    font-size: 0.9em;
+    min-height: 60px;
+}
+.tm-logo img {
+    height: 80px;
+    width: 80px;
+    transition: height 300ms 0s ease, width 300ms 0s ease;
+}
+.ie .tm-logo img,
+.edge .tm-logo img {
+    height: 50px;
+    width: 50px;
+}
+#nav.uk-sticky-below .tm-logo img {
+    height: 50px;
+    width: 50px;
+}
+
+/* large tablet */
+@media screen and (max-width:1199px) {
+    
+    /* logo */
+    .tm-logo {
+        padding: 0 15px;
+    }
+
+}
+
+/* tablet */
+@media screen and (max-width:959px) {
+
+    /* nav */
+    #nav-search {
+        display: flex;
+    }
+    
+}
+
+/* large phone */
+@media screen and (max-width:639px) {
+    
+    /* logo */
+    .tm-logo img {
+        height: 60px;
+        width: 60px;
+    }
+
+}
+
+/* phone */
+@media screen and (max-width:400px) {
+    
+}
+
+/* small phone */
+@media screen and (max-width:360px) {
+
+    /* nav */
+    #nav.uk-sticky-below #nav-search > a {
+        margin-right: 0;
+    }
+    #nav-search > a {
+        font-size: 0.7em;
+        padding: 10px;
+    }
+
+    /* logo */
+    .tm-logo {
+        padding-left: 0;
+        font-size: 0.9em;
+    }
+
+}

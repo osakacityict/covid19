@@ -1,0 +1,91 @@
+
+/* categories */
+.tm-categories > div {
+    position: relative;
+}
+.win .tm-categories .uk-card {
+    border: 1px solid #eee;
+}
+
+/* category */
+.tm-category::before {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 1.5em;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    width: 0.8em;
+    height: 0.8em;
+    border-top: 1px solid rgb(219, 219, 219);
+    border-right: 1px solid rgb(219, 219, 219);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all 300ms 0s ease;
+}
+.tm-category:hover::before,
+.tm-category:focus::before {
+    right: 1.2em;
+    border-color: rgb(206, 206, 206);
+}
+.tm-category .uk-card-header {
+    border: none;
+    padding: 20px;
+}
+.tm-category > div {
+    position: relative;
+    height: 100%;
+}
+.tm-category > div::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    width: 5px;
+    margin: 10px 0;
+    height: calc(100% - 20px);
+    background-color: transparent;
+    border-right: 6px solid #ddd;
+    border-radius: 6px;
+    transition: all 300ms 0s ease;
+}
+#hero-menu-kojin .tm-category > div::before {
+    border-color: #cf426c;
+}
+#hero-menu-kojin .tm-category:hover > div::before,
+#hero-menu-kojin .tm-category:focus > div::before {
+    border-color: #c93662;
+}
+#hero-menu-jigyousha .tm-category > div::before {
+    border-color: #945694;
+}
+#hero-menu-jigyousha .tm-category:hover > div::before,
+#hero-menu-jigyousha .tm-category:focus > div::before {
+    border-color: #8a4a8a;
+}
+
+/* large tablet */
+@media screen and (max-width:1199px) {
+    
+}
+
+/* tablet */
+@media screen and (max-width:959px) {
+
+}
+
+/* large phone */
+@media screen and (max-width:639px) {
+    
+}
+
+/* phone */
+@media screen and (max-width:400px) {
+    
+}
+
+/* small phone */
+@media screen and (max-width:360px) {
+
+}

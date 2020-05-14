@@ -1,0 +1,148 @@
+
+/* button-default */
+.uk-button-default {
+    background-color: #fff;
+}
+.uk-button-default:hover,
+.uk-button-default:focus {
+    background-color: #f9f9f9;
+}
+
+/* button-primary */
+.uk-button-primary {
+    background-color: #00956E;
+}
+.uk-button-primary:hover,
+.uk-button-primary:focus {
+    background-color: #008260;
+}
+.uk-button-primary.kojin {
+    background-color: #cf426c;
+    border-color: #c93662;
+}
+.uk-button-primary.kojin:hover,
+.uk-button-primary.kojin:focus,
+.uk-active .uk-button-primary.kojin {
+    background-color: #c93662;
+}
+.uk-button-primary.jigyousha {
+    background-color: #945694;
+    border-color: #8a4a8a;
+}
+.uk-button-primary.jigyousha:hover,
+.uk-button-primary.jigyousha:focus,
+.uk-active .uk-button-primary.jigyousha {
+    background-color: #8a4a8a;
+}
+
+/* button-left-arrow */
+.uk-button.left-arrow {
+    position: relative;
+}
+.uk-button.left-arrow::before {
+    position: absolute;
+    top: -0.2em;
+    bottom: 0;
+    left: 1.5em;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    width: 0.5em;
+    height: 0.5em;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    transition: all 300ms 0s ease;
+}
+.uk-button.uk-button-default.left-arrow::before {
+    border-color: #999;
+}
+.uk-button.left-arrow:hover::before,
+.uk-button.left-arrow:focus::before {
+    top: 0.2em;
+}
+
+/* button-right-arrow */
+.uk-button.right-arrow {
+    position: relative;
+}
+.uk-button.right-arrow::before {
+    position: absolute;
+    top: -0.2em;
+    bottom: 0;
+    right: 1.5em;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    width: 0.5em;
+    height: 0.5em;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all 300ms 0s ease;
+}
+.uk-button.uk-button-default.right-arrow::before {
+    border-color: #999;
+}
+.uk-button.right-arrow:hover::before,
+.uk-button.right-arrow:focus::before {
+    right: 0.2em;
+} 
+
+/* back */
+.tm-back > div {
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+.tm-back a {
+    display: inline-block;
+    color: #444;
+    padding: 10px 20px;
+    position: absolute;
+    top: -20px;
+    background-color: #fff;
+}
+.tm-back a:hover,
+.tm-back a:focus {
+    color: #0c6a6d;
+}
+.tm-back a > div {
+    position: relative;
+}
+.tm-back a > div .back-icon {
+    position: relative;
+    left: 0;
+    transition: left 300ms 0s ease
+}
+.tm-back a:hover > div .back-icon,
+.tm-back a:focus > div .back-icon {
+    left: -2px
+}
+
+/* large tablet */
+@media screen and (max-width:1199px) {
+    
+}
+
+/* tablet */
+@media screen and (max-width:959px) {
+
+}
+
+/* large phone */
+@media screen and (max-width:639px) {
+    
+}
+
+/* phone */
+@media screen and (max-width:400px) {
+    
+}
+
+/* small phone */
+@media screen and (max-width:360px) {
+
+}

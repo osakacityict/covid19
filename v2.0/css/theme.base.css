@@ -1,0 +1,58 @@
+
+/* font-family */
+body, .uk-logo, .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6, p {
+    font-family: Lato, "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    color: #1a1a1a;
+}
+
+/* link */
+a, a:hover, a:focus {
+    text-decoration: none;
+    transition: color 300ms 0s ease, background-color 300ms 0s ease, border-color 300ms 0s ease;
+}
+a:hover, a:focus {
+    color: #0c6a6d;
+}
+
+/* layout */
+.uk-container-large {
+    max-width: none;
+}
+
+/* spacer */
+.tm-spacer {
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+
+/* large tablet */
+@media screen and (max-width:1199px) {
+    
+}
+
+/* tablet */
+@media screen and (max-width:959px) {
+
+}
+
+/* large phone */
+@media screen and (max-width:639px) {
+
+    /* spacer */
+    .tm-spacer {
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+
+}
+
+/* phone */
+@media screen and (max-width:400px) {
+    
+    
+}
+
+/* small phone */
+@media screen and (max-width:360px) {
+
+}

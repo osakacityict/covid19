@@ -1,0 +1,110 @@
+
+/* side-bar */
+#side-bar {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+#side-bar #local-nav {
+    padding-left: 0;
+    border: 1px solid #dae4e4;
+}
+#local-nav-accordion > li {
+    background-color: #fff;
+}
+#local-nav-accordion .uk-accordion-title {
+    background-color: #f1f5f5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#local-nav-list {
+    border-top: 1px solid #dae4e4;
+}
+#local-nav-list .showall {
+    font-size: 0.8em;
+    margin: 16px;
+}
+#local-nav-list .hidden {
+    display: none;
+}
+#local-nav-list ul,
+#local-nav-list li {
+    margin: 0;
+}
+#local-nav-list a:not(.uk-button) {
+    color: #666;
+    display: block;
+    border-bottom: 1px solid #eee;
+    padding-left: 0.5em;
+}
+#local-nav-list a:not(.uk-button):hover,
+#local-nav-list a:not(.uk-button):focus {
+    color: #0c6a6d;
+    background-color: #f1f5f5;
+}
+#local-nav-list a.active {
+    position: relative;
+}
+#local-nav-list a.active::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 5px);
+    left: -15px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #008260;
+}
+#local-nav-list > ul > li > a {
+    font-size: 1.2em;
+    padding: 15px 0;
+}
+#local-nav-list > ul > li > ul > li > a {
+    font-size: 1em;
+    padding: 12px 0;
+    margin-left: 8px;
+}
+#local-nav-list > ul > li > ul > li > ul > li > a {
+    font-size: 0.9em;
+    padding: 8px 0;
+    margin-left: 16px;
+}
+
+/* large tablet */
+@media screen and (max-width:1199px) {
+    
+    /* side-bar */
+    #side-bar {
+        padding-top: 30px;
+    }
+    #side-bar #local-nav {
+        padding-top: 0;
+    }
+
+}
+
+/* tablet */
+@media screen and (max-width:959px) {
+
+    /* side-bar */
+    #side-bar {
+        padding: 0 30px 30px;
+        margin: 0;
+    }
+
+}
+
+/* large phone */
+@media screen and (max-width:639px) {    
+
+}
+
+/* phone */
+@media screen and (max-width:400px) {
+    
+}
+
+/* small phone */
+@media screen and (max-width:360px) {
+
+}

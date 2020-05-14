@@ -1,0 +1,110 @@
+
+/* main */
+#main {
+    background-color: #f1f5f5;
+}
+
+/* pickup */
+#pickup-kojin.tm-feed > div,
+#pickup-jigyousha.tm-feed > div {
+    padding-bottom: 0;
+}
+
+/* info */
+#info {
+    background-color: #f6f8f8;
+}
+#info h3 {
+    margin-bottom: 40px;
+}
+
+/* feed */
+.win .tm-feed .uk-card {
+    border: 1px solid #eee;
+}
+.tm-feed .uk-card-body > div {
+    position: relative;
+    padding-bottom: 40px;
+}
+.tm-feed .uk-card-body h4 {
+    margin-bottom: 2em;
+}
+.tm-feed .uk-card-body h4:after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 1em;
+    width: 1em;
+    border-bottom: 1px solid #ddd;
+}
+.tm-feed .uk-card-body .tm-feed-date,
+.tm-feed .uk-card-body .tm-feed-button {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+}
+.tm-feed .uk-card-body .tm-feed-date {
+    left: 0;
+}
+.tm-feed .uk-card-body .tm-feed-button {
+    right: 0;
+}
+.tm-feed .uk-card-default.uk-card-hover:hover .tm-feed-button,
+.tm-feed .uk-card-default.uk-card-hover:focus .tm-feed-button {
+    background-color: #008260;
+}
+#pickup-kojin.tm-feed .uk-card-body .tm-feed-button {
+    background-color: #cf426c;
+}
+#pickup-kojin.tm-feed .uk-card-default.uk-card-hover:hover .tm-feed-button,
+#pickup-kojin.tm-feed .uk-card-default.uk-card-hover:focus .tm-feed-button {
+    background-color: #c93662;
+}
+#pickup-jigyousha.tm-feed .uk-card-body .tm-feed-button {
+    background-color: #945694;
+}
+#pickup-jigyousha.tm-feed .uk-card-default.uk-card-hover:hover .tm-feed-button,
+#pickup-jigyousha.tm-feed .uk-card-default.uk-card-hover:focus .tm-feed-button {
+    background-color: #8a4a8a;
+}
+
+/* notice */
+#notice {
+    background-color: #edf1f1;
+}
+#notice .uk-text-meta {
+    color: #666;
+}
+
+/* large tablet */
+@media screen and (max-width:1199px) {
+        
+}
+
+/* tablet */
+@media screen and (max-width:959px) {
+
+}
+
+/* large phone */
+@media screen and (max-width:639px) {
+    
+    /* info */
+    #info h3 {
+        margin-top: 30px;
+    }
+    #info .uk-grid {
+        margin-bottom: 30px;
+    }
+
+}
+
+/* phone */
+@media screen and (max-width:400px) {
+    
+}
+
+/* small phone */
+@media screen and (max-width:360px) {
+
+}

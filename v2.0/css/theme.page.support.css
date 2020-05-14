@@ -1,0 +1,162 @@
+
+/* contents */
+#contents {
+    padding-top: 0; 
+    padding-bottom: 0; 
+}
+
+/* contents-title */
+#contents-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#contents-categories > a {
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* contents-main */
+#contents-main {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+#contents-main h3 {
+    font-weight: 700;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+#contents-main h3:not(:first-child) {
+    margin-top: 80px;
+}
+#contents-main p:not(.uk-text-meta) {
+    font-size: 1.1em;
+}
+
+/* contents-body button */
+#contents-body a.uk-button-primary {
+    margin-top: 40px;
+    font-size: 1.1em;
+    border-radius: 30px;
+    padding: 0 30px 0 40px;
+    background-color: #00956E;
+    box-shadow: 0px 4px 16px 8px #0f5a4631;
+}
+#contents-body a.uk-button-primary:hover,
+#contents-body a.uk-button-primary:focus {
+    background-color: #008260;
+}
+#contents-body a.uk-button-primary .uk-icon {
+    position: relative;
+    left: 0;
+    transition: left 300ms 0s ease;
+}
+#contents-body a.uk-button-primary:hover .uk-icon,
+#contents-body a.uk-button-primary:focus .uk-icon {
+    left: 5px;
+}
+
+/* share */
+.tm-contents-share {
+    margin-top: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tm-contents-share a {
+    display: block;
+}
+.tm-contents-share a.twitter {
+    background-color: #1DA1F2;
+}
+.tm-contents-share a.line {
+    background-color: #00b900;
+}
+.tm-contents-share a.facebook {
+    background-color: #3B5998;
+}
+
+/* contents-date */
+.tm-contents-date .uk-text-meta {
+    color: #666;
+}
+
+/* large tablet */
+@media screen and (max-width:1199px) {
+    
+    /* side-bar */
+    #side-bar #local-nav {
+        padding-top: 0;
+    }
+
+    /* contents-main */
+    #contents-main {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    #contents-main h3:not(:first-child) {
+        margin-top: 30px;
+    }
+
+    /* contents-body button */
+    #contents-body a.uk-button-primary {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* tablet */
+@media screen and (max-width:959px) {
+
+    /* contents */
+    #contents {
+        padding: 0;
+    }
+    #contents > div {
+        margin: 0;
+    }
+
+    /* contents-title-wrapper */
+    #contents-title-wrapper {
+        text-align: left!important;
+        padding-bottom: 50px;
+    }
+
+    /* side-bar */
+    #side-bar {
+        padding-left: 30px;
+    }
+
+    /* contents-main */
+    #contents-main {
+        padding-right: 40px;
+        margin-top: 0;
+    }
+}
+
+/* large phone */
+@media screen and (max-width:639px) {    
+
+    /* contents-main */
+    #contents-main {
+        padding: 30px;
+    }
+    #contents-main > div {
+        padding-top: 0;
+    }
+    #contents-main .tm-contents-date > p > span {
+        display: block;
+    }
+
+}
+
+/* phone */
+@media screen and (max-width:400px) {
+    
+}
+
+/* small phone */
+@media screen and (max-width:360px) {
+
+}

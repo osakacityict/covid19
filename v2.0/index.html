@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+
+    <meta charset="utf-8">
+
+    <title>新型コロナウイルス感染症対策支援情報サイト | サンプル市</title>
+    <meta name="description" content="新型コロナウイルス感染症の影響を受けた事業者の方や市民の方を支援するための制度等をご案内します。">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta property="og:title" content="新型コロナウイルス感染症対策支援情報サイト | サンプル市"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="新型コロナウイルス感染症の影響を受けた事業者の方や市民の方を支援するための制度等をご案内します。"/>
+    <meta property="og:url" content="https://covid19.city.sample.lg.jp/"/>
+    <meta property="og:image" content="https://covid19.city.sample.lg.jp/ogimage.png"/>
+    <meta property="og:site_name" content="新型コロナウイルス感染症対策支援情報サイト | サンプル市"/>
+    <meta property="og:locale" content="ja_JP"/>
+
+    <link rel="stylesheet" type='text/css' href="https://fonts.googleapis.com/css?family=Lato%3A400%2C700%7CNoto+Sans+JP%3A400%2C700&#038;ver=5.3.2" media='all' />
+    <link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.csv-1.0.3.min.js"></script>
+
+    <meta name="theme-color" content="#008260">
+
+    <link rel="stylesheet" type="text/css" href="css/theme.base.css?version=2.0">
+    <link rel="stylesheet" type="text/css" href="css/theme.button.css?version=2.0">
+    <link rel="stylesheet" type="text/css" href="css/theme.header.css?version=2.0">
+    <link rel="stylesheet" type="text/css" href="css/theme.footer.css?version=2.0">
+    <link rel="stylesheet" type="text/css" href="css/theme.breadcrumb.css?version=2.0">
+    <link rel="stylesheet" type="text/css" href="css/theme.category.css?version=2.0">
+    <link rel="stylesheet" type="text/css" href="css/theme.tag.css?version=2.0">
+    <link rel="stylesheet" type="text/css" href="css/theme.hero.css?version=2.0">
+    <link rel="stylesheet" type="text/css" href="css/theme.page.top.css?version=2.0">
+
+    <link rel="stylesheet" type="text/css" media="print" href="css/print.css?version=0.0.1">
+
+    <script src="js/url.js?version=2.0"></script>
+    <script src="js/datetime.js?version=2.0"></script>
+    <script src="js/csv.js?version=2.0"></script>
+
+</head>
+<body>
+
+    <div id="loader" class="uk-modal-full uk-modal uk-open" uk-modal style="display: block;">
+        <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport></div>
+    </div>
+
+    <div id="header">
+
+        <nav id="nav" class="uk-navbar-container" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-navbar-transparent; cls-inactive: uk-navbar-transparent;">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo tm-logo" href="./"><img src="img/logo.svg" alt="" height="80px" width="80px">新型コロナウイルス感染症<br>対策支援情報サイト</a>
+            </div>
+            <div id="nav-search" class="uk-navbar-right">
+
+                <a href="#" uk-toggle="target: #offcanvas">
+                    <span uk-icon="icon: search; ratio: 2;"></span><br>
+                    <span>検索</span>
+                </a>
+                <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
+                    <div class="uk-offcanvas-bar">
+                        <a href="#" class="uk-offcanvas-close" uk-close></a>
+                        <form id="offcanvas-form" class="uk-form-stacked" action="search.html" method="GET">
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="target">対象</label>
+                                <div class="uk-form-controls">
+                                    <select class="uk-select" id="target" name="target">
+                                        <option value="個人">個人</option>
+                                        <option value="事業者">事業者</option>
+                                    </select>
+                                </div>
+                            </div>
+                        
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="keyword">検索キーワード</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="keyword" name="keyword" type="text" placeholder="">
+                                </div>
+                            </div>
+
+                            <button class="uk-button uk-button-primary uk-width-1-1">検索</button>
+                            
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="tm-breadcrumb">
+            <ul class="uk-container-large uk-padding-large uk-breadcrumb tm-breadcrumb-list">
+                <li><a href="https://www.city.sample.lg.jp/" target="_blank"><span class="uk-margin-small-right" uk-icon="icon: home;"></span><span>サンプル市</span></a></li>
+                <li><span class="uk-margin-small-right" uk-icon="icon: chevron-right;"></span><span>新型コロナウイルス感染症対策支援情報サイト</span></li>
+            </ul>
+        </div>
+        
+        <div id="hero" class="uk-container-large uk-padding-large uk-text-center uk-height-large">
+            <h1 id="contents-title">支援情報を探す</h1>
+            <p>新型コロナウイルス感染症の影響を受けた、事業者の方や市民の方を支援するための制度等をご案内します。</p>
+        </div>
+
+    </div>
+
+    <div id="main">
+
+        <div class="uk-container uk-container-large uk-padding-large tm-tab-menu">
+
+            <div class="uk-box-shadow-medium">
+                <ul id="hero-tab" class="uk-child-width-1-2 tm-hero-buttons" uk-tab="animation: uk-animation-fade">
+                    <li id="hero-tab-kojin" class="uk-active">
+                        <h2 class="uk-h5 uk-margin-remove-bottom">
+                            <a class="uk-button uk-button-primary kojin" href="#" title="クリックすると、タブ「個人の方へ」を表示します。">個人<span class="small">の方へ</span></a>
+                        </h2>
+                    </li>
+                    <li id="hero-tab-jigyousha">
+                        <h2 class="uk-h5 uk-margin-remove-bottom">
+                            <a class="uk-button uk-button-primary jigyousha" href="#" title="クリックすると、タブ「事業者の方へ」を表示します。">事業者<span class="small">の方へ</span></a>
+                        </h2>
+                    </li>
+                </ul>
+                
+                <ul id="hero-menu" class="uk-switcher">
+                    <li id="hero-menu-kojin" class="uk-padding-large">
+        
+                        <h3 class="uk-margin-remove-top">個人の方へ</h3>
+        
+                        <!-- 
+                        <div class="uk-alert-danger" uk-alert>
+                            <a class="uk-alert-close" uk-close></a>
+                            <h3>重要なお知らせ</h3>
+                            <p>個人向けの重要なお知らせがあれば、ここに掲載可能。</p>
+                        </div>
+                        -->
+        
+                        <!-- category -->
+                        <div class="uk-grid-match uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@xl tm-categories" uk-grid>
+                            <!-- theme.js により category.csv からセットする -->
+                        </div>
+        
+                        <!-- pickup -->
+                        <div id="pickup-kojin" class="tm-feed">
+                            <!-- theme.js により feed.csv からセットする -->
+                        </div>
+        
+                    </li>
+                    <li id="hero-menu-jigyousha" class="uk-padding-large">
+        
+                        <h3 class="uk-margin-remove-top">事業者の方へ</h3>
+        
+                        <!--
+                        <div class="uk-alert-danger" uk-alert>
+                            <a class="uk-alert-close" uk-close></a>
+                            <h3>重要なお知らせ</h3>
+                            <p>事業者向けの重要なお知らせがあれば、ここに掲載可能。</p>
+                        </div>
+                        -->
+        
+                        <div class="uk-grid-match uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@xl tm-categories" uk-grid>
+                            <!-- theme.js により category.csv からセットする -->
+                        </div>
+                        
+                        <!-- pickup -->
+                        <div id="pickup-jigyousha" class="tm-feed">
+                            <!-- theme.js により feed.csv からセットする -->
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        
+        <div id="info" class="tm-feed">
+            <!-- theme.js により info.csv からセットする -->
+        </div>
+
+    </div>
+
+    <div class="tm-breadcrumb">
+        <ul class="uk-container-large uk-padding-large uk-breadcrumb tm-breadcrumb-list">
+            <li><a href="https://www.city.sample.lg.jp/" target="_blank"><span class="uk-margin-small-right" uk-icon="icon: home;"></span><span>サンプル市</span></a></li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: chevron-right;"></span><span>新型コロナウイルス感染症対策支援情報サイト</span></li>
+        </ul>
+    </div>
+
+    <div id="notice">
+        <div class="uk-container-large uk-padding-large"> 
+            <p class="uk-margin-remove-bottom uk-text-meta">
+                本サイトでは、国や府市等の主な支援策の情報を目的別にまとめ、随時更新しています。<br>
+                掲載情報には十分留意していますが、支援制度の詳細等は、それぞれの支援策の実施機関等にご確認ください。
+            </p>
+        </div>
+    </div>
+    
+    <div id="footer">
+
+        <div class="uk-container-large">
+            <div class="uk-grid-collapse" uk-grid>
+                <div class="uk-width-1-1 uk-width-2-3@s">
+                    <div class="uk-padding-large">
+                        <div class="uk-child-width-1-1 uk-child-width-1-2@s sitemap" uk-grid>
+                            <!-- theme.js により category.csv からセットする -->
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-1 uk-width-1-3@s logo">
+                    <div class="uk-height-1-1">
+                        <a href="https://www.city.sample.lg.jp/" target="_blank" class="uk-height-1-1 uk-flex uk-flex-middle">
+                            <img src="img/home_transparent.png" width="40%" alt="サンプル市">
+                        </a>
+                    </div>
+                </div>    
+            </div>    
+        </div>
+
+        <div id="credit" class="uk-container-large uk-padding-large">
+            <a class="uk-flex uk-flex-middle uk-text-meta" href="https://github.com/osakacityict/covid19" target="_blank"><span class="uk-margin-small-right" uk-icon="github"></span><span>このサイトのソースコードを入手</span></a>
+        </div>
+
+    </div>
+    
+    <script src="js/client.js?version=2.0"></script>
+    <script src="js/theme.base.js?version=2.0"></script>
+    <script src="js/theme.category.js?version=2.0"></script>
+    <script src="js/theme.feed.js?version=2.0"></script>
+    <script src="js/theme.header.js?version=2.0"></script>
+    <script src="js/theme.footer.js?version=2.0"></script>
+    <script>
+        tm.initialize(function(){
+            // 初期化処理
+        });
+    </script>
+
+</body>
+</html>

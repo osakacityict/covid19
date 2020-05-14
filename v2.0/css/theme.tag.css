@@ -1,0 +1,69 @@
+
+/* tag */
+.tm-feed .tag > span > span,
+.result-list-item-body > .tag > span > span,
+#contents-categories > a {
+    display: inline-block;
+    color: #fff;
+    background-color: #fff;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transition: all 300ms 0s ease;
+}
+.tm-feed .tag > .kojin > span,
+.result-list-item-body > .tag > .kojin > span,
+#contents-categories > a.kojin {
+    color: #d13363;
+    border-color: #d13363;
+}
+.tm-feed .tag > .jigyousha > span,
+.result-list-item-body > .tag > .jigyousha > span,
+#contents-categories > a.jigyousha {
+    color: #975897;
+    border-color: #975897;
+}
+.result-list-item > a:hover .result-list-item-body > .tag > .kojin > span,
+.result-list-item > a:focus .result-list-item-body > .tag > .kojin > span,
+#contents-categories > a.kojin:hover,
+#contents-categories > a.kojin:focus {
+    color: #d12357;
+    border-color: #d12357;
+    background-color: #f7f2f3;
+}
+.result-list-item > a:hover .result-list-item-body > .tag > .jigyousha > span,
+.result-list-item > a:focus .result-list-item-body > .tag > .jigyousha > span,
+#contents-categories > a.jigyousha:hover,
+#contents-categories > a.jigyousha:focus {
+    color: #974b97;
+    border-color: #974b97;
+    background-color: #f7f2f7;
+}
+
+/* large tablet */
+@media screen and (max-width:1199px) {
+    
+}
+
+/* tablet */
+@media screen and (max-width:959px) {
+
+}
+
+/* large phone */
+@media screen and (max-width:639px) {
+    
+}
+
+/* phone */
+@media screen and (max-width:400px) {
+    
+}
+
+/* small phone */
+@media screen and (max-width:360px) {
+
+}
